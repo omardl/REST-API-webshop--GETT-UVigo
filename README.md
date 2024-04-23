@@ -22,7 +22,7 @@ Actualmente en desarrollo, tratará de alcanzar los siguientes objetivos:
 
 - Permitir la posibilidad de buscar artículos por su nombre.
 
-- Otras funcionalidades extra podrán surgir y ser implementadas a lo largo de su desarrollo
+- Otras funcionalidades extra podrán surgir y ser implementadas a lo largo de su desarrollo.
 
 ## Vista previa de la nueva versión:
 
