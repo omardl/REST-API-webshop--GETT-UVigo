@@ -31,3 +31,5 @@ Actualmente en desarrollo, tratará de alcanzar los siguientes objetivos:
 ![Home login](https://github.com/omardl/REST-API-webshop--GETT-UVigo/assets/105445540/89f87ffe-f0a5-4253-97cf-7519ebf2e7c6)
 
 Actualmente el login y la comunicación con el backend para el acceso a la base de datos ya están implementados.
+
+### Autor - Omar Delgado
