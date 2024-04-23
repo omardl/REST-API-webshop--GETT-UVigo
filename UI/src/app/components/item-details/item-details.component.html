@@ -1,0 +1,29 @@
+<div *ngIf="userRole === 'admin'">
+  <button (click)="logOut()"> Logout </button>
+</div>
+
+<div *ngIf="userRole === 'user'">
+  <button mat-button (click)="logIn()">Login as Admin</button>
+</div>
+
+<div *ngIf="item">
+    <p> Referencia: {{item_id}} </p>
+    <p> Nombre: {{item.Nombre}} </p>
+    <p> Descripcion: {{item.Descripcion}} </p>
+    <p> Cantidad: {{item.Cantidad}} </p>
+    <p> Precio: {{item.Precio | number: '1.2-2'}} </p>
+
+    <div *ngIf="userRole === 'admin'">
+      <button mat-icon-button (click)="updateItem(item)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      
+      <button mat-icon-button (click)="deleteItem()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+</div>
+
+<button (click)="goBack()">
+    Volver
+</button>

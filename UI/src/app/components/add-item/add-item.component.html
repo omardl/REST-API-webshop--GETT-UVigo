@@ -1,0 +1,24 @@
+<div *ngIf="userRole === 'admin'">
+    <button (click)="logOut()"> Logout </button>
+  </div>
+  
+<div *ngIf="userRole === 'user'">
+    <button mat-button (click)="logIn()">Login as Admin</button>
+</div>
+
+<label for="datos"> Introduzca los datos del item a crear  </label>
+
+<form [formGroup]="formItem">
+    <input id="Nombre" type="text" formControlName="Nombre" />
+    <input id="Descripcion" type="text" formControlName="Descripcion" />
+    <input id="Cantidad" type="number" min="0" formControlName="Cantidad" />
+    <input id="Precio" type="number" min="0" formControlName="Precio" />
+</form>
+
+<button [disabled]="formItem.invalid" (click)="createItem()" >
+    Crear item
+</button>
+
+<button (click)="goBack()">
+    Volver
+</button>

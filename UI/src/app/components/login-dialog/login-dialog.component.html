@@ -1,0 +1,21 @@
+<div class="dialog-global-div">
+    <h1 mat-dialog-title> Login </h1>
+
+    <div mat-dialog-content class="dialog-div">
+        <form [formGroup]="loginForm">
+            <div class="form-div">
+                <label> Username: </label>
+                <input matInput formControlName="username" required>
+            </div>
+            <div class="form-div">
+                <label> Password: </label>
+                <input matInput formControlName="pass" required>
+            </div>
+        </form>
+    </div>
+
+    <div class="button-div" mat-dialog-actions>
+        <button class="button" mat-button (click)="notLogIn()"> Cancel </button>
+        <button class="button" mat-button (click)="logIn()" [disabled]="loginForm.invalid"> Login </button>
+    </div>
+</div>
